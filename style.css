@@ -1,0 +1,95 @@
+/* Google Font Import Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap');
+*{
+    margin: 20px;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    min-height: 80vh; /* probado para que funcione mejor en pantallas tambien medianas */
+    display: flex;
+    justify-content: center;
+    background: #242933;     /*revisado, todo ok */
+}
+.container{
+    width: 500px;
+    border-radius: 10px;
+    border: 2px solid #3b4156;
+    padding: 10px;
+    background-color:#2f3644;
+}
+.container header{
+    font-size: 35px;
+    font-weight: 600;
+    color: #aab8df;
+    margin-left: 60px;
+}
+.container form{
+   position: relative;
+   margin-top: 16px;
+}
+
+.input-fields label{
+    font-size: 16px;
+    font-weight: 600;
+    margin: 5px;
+    color: #7781a0;
+}
+
+.input-fields input{
+    outline: none;
+    font-size: 14px;
+    font-weight: 400;
+    border-radius: 5px;
+    border: 2px solid white;
+    margin: 10px 5px;
+    padding: 0 15px;
+    height: 45px;
+    width: 100%;
+}
+
+/* Es para poner el color verde a los bordes  */ 
+.input-fields.success input{
+    border-color: #2ecc72;
+}
+/* Es para poner el color rojo a los bordes */ 
+
+.input-fields.error input{
+    border-color: #e74c3c;
+}
+
+/* desde aquí van los iconos */
+
+img{
+    position: absolute;
+    margin: -45px 30px 10px;
+    right: 15px;
+    visibility: hidden; /* para activar o desactivar los iconos en vez de visibility hidden*/
+}
+
+.input-fields.success .success-icon{
+    visibility: visible;
+}
+
+.input-fields.error .error-icon{
+    visibility: visible;
+}
+/* aqui es solo para el texto de rellene este campo*/
+.input-fields small{
+    margin: -5px 0 0 5px;
+    visibility: hidden;  /* para activar o desactivar mensaje*/
+}
+.input-fields.error small {
+    color: #c35557;
+    visibility: visible;
+}
+
+form button{
+    width: 360px;
+    background-color:#6c63ff;
+    color: #fff;
+    height: 50px;
+    margin: 5px 45px;
+    border-radius: 6px;
+}

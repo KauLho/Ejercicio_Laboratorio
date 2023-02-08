@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="success-icon" href="images\success-icon.svg">
+    <link rel="error-icon" href="images\error-icon.svg">
+    
+    <title>Formulario Actividad Final</title>
+</head> 
+
+<body>
+    
+<div class="container">
+    <header>Create Account</header>
+<form id="form" action="#">
+    <div class="fields">
+        <div class="input-fields">
+            <label> Nombre </label>
+            <input type="text" id="username"> 
+            <img src="images/error-icon.svg" alt="error icon" id="error_icon" class="error-icon">
+            <img src="images/success-icon.svg" alt="success icon" id="success_icon" class="success-icon">
+            <small>Mensaje de Error</small>
+        </div>
+        
+        <div class="input-fields">
+            <label> Email </label>
+            <input type="text" id="email">
+            <img src="images/error-icon.svg" alt="error icon" id="error_icon" class="error-icon">
+            <img src="images/success-icon.svg" alt="success icon" id="success_icon" class="success-icon">
+            <small>Mensaje de Error</small>
+        </div>
+        
+      
+        <div class="input-fields">
+            <label> Clave </label>
+            <input type="password" id="password">
+            <img src="images/error-icon.svg" alt="error icon" id="error_icon" class="error-icon">
+            <img src="images/success-icon.svg" alt="success icon" id="success_icon" class="success-icon">
+            <small>Mensaje de Error</small>
+        </div>
+     
+        <div class="input-fields">
+            <label> Confirme su clave </label>
+            <input type="password" id="confirm_password">
+            <img src="images/error-icon.svg" alt="error icon" id="error_icon" class="error-icon">
+            <img src="images/success-icon.svg" alt="success icon" id="success_icon" class="success-icon">
+            <small>Mensaje de Error</small>
+        </div>
+    </div>
+        <button type="submit" class="button">Enviar</button>
+    </form>  
+</div>
+<script src="index.js"></script>
+</body>
+</html>
